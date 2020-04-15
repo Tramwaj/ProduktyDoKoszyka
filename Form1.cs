@@ -57,6 +57,10 @@ namespace ProduktyDoKoszyka
         {
             _cart.AddProduct(_currentProduct);
             lblSum.Text = _cart.Cost().ToString();
+            if (_cart.Cost() != _cart.CostAfterDiscount(_discountService))
+            {
+                lblSumWithDiscount.Text = _cart.CostAfterDiscount(_discountService).ToString();
+            }
             //dgvCart.DataSource = _cart.ProductGroups;
         }
 

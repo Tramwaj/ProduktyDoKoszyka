@@ -17,10 +17,13 @@ namespace ProduktyDoKoszyka.Models
             decimal _cost = cart.Cost();
             foreach (var product in discounts.singleItemDiscounts)
             {
-                _cost -= cart.Products
-                    .Where(p => p.Name == product.Name)
-                    .Count() >= product.RequiredQuantity ?
-                    cart.Products.Sum(p => p.Price) * (1m - product.Discount / 10m) : 0;
+                var DiscountedProduct = cart.Products
+                        .Where(p => p.Name == product.Name);
+                _cost -= DiscountedProduct
+                        .Count() >= product.RequiredQuantity ?
+                         DiscountedProduct.Sum(p => p.Price) * (product.Discount / 100m) : 0;
+                Console.WriteLine(DiscountedProduct.Count());
+                Console.WriteLine("Produkt rabatujący: {0}, Req.qty: {1}",product.Name,product.RequiredQuantity);
             }
             return cart.Products
                 .GroupBy(p => p.Category)

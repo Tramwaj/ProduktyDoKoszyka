@@ -134,7 +134,7 @@
             // 
             this.lblSumWithDiscount.AutoSize = true;
             this.lblSumWithDiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblSumWithDiscount.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblSumWithDiscount.ForeColor = System.Drawing.Color.YellowGreen;
             this.lblSumWithDiscount.Location = new System.Drawing.Point(572, 197);
             this.lblSumWithDiscount.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSumWithDiscount.Name = "lblSumWithDiscount";
