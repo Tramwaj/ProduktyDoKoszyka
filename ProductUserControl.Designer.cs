@@ -31,6 +31,8 @@
             this.lblName = new System.Windows.Forms.Label();
             this.pbxImage = new System.Windows.Forms.PictureBox();
             this.lblDescription = new System.Windows.Forms.Label();
+            this.lblPrice = new System.Windows.Forms.Label();
+            this.lblCategory = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbxImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -40,15 +42,14 @@
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lblName.Location = new System.Drawing.Point(18, 22);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(79, 29);
+            this.lblName.Size = new System.Drawing.Size(0, 29);
             this.lblName.TabIndex = 0;
-            this.lblName.Text = "label1";
             // 
             // pbxImage
             // 
             this.pbxImage.Location = new System.Drawing.Point(23, 80);
             this.pbxImage.Name = "pbxImage";
-            this.pbxImage.Size = new System.Drawing.Size(289, 178);
+            this.pbxImage.Size = new System.Drawing.Size(347, 199);
             this.pbxImage.TabIndex = 1;
             this.pbxImage.TabStop = false;
             // 
@@ -56,19 +57,37 @@
             // 
             this.lblDescription.Location = new System.Drawing.Point(23, 282);
             this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(593, 136);
+            this.lblDescription.Size = new System.Drawing.Size(347, 124);
             this.lblDescription.TabIndex = 2;
-            this.lblDescription.Text = "label1";
+            // 
+            // lblPrice
+            // 
+            this.lblPrice.AutoSize = true;
+            this.lblPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblPrice.Location = new System.Drawing.Point(306, 406);
+            this.lblPrice.Name = "lblPrice";
+            this.lblPrice.Size = new System.Drawing.Size(0, 25);
+            this.lblPrice.TabIndex = 3;
+            // 
+            // lblCategory
+            // 
+            this.lblCategory.AutoSize = true;
+            this.lblCategory.Location = new System.Drawing.Point(23, 55);
+            this.lblCategory.Name = "lblCategory";
+            this.lblCategory.Size = new System.Drawing.Size(0, 17);
+            this.lblCategory.TabIndex = 4;
             // 
             // ProductUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lblCategory);
+            this.Controls.Add(this.lblPrice);
             this.Controls.Add(this.lblDescription);
             this.Controls.Add(this.pbxImage);
             this.Controls.Add(this.lblName);
             this.Name = "ProductUserControl";
-            this.Size = new System.Drawing.Size(680, 452);
+            this.Size = new System.Drawing.Size(388, 452);
             this.Load += new System.EventHandler(this.ProductUserControl_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbxImage)).EndInit();
             this.ResumeLayout(false);
@@ -81,5 +100,7 @@
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.PictureBox pbxImage;
         private System.Windows.Forms.Label lblDescription;
+        private System.Windows.Forms.Label lblPrice;
+        private System.Windows.Forms.Label lblCategory;
     }
 }

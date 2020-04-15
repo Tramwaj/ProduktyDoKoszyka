@@ -14,6 +14,9 @@ namespace ProduktyDoKoszyka
     public partial class Form1 : Form
     {
         private readonly ProductService _productService = new ProductService();
+        private Product _currentProduct;
+        private Cart _cart = new Cart();
+        private readonly DiscountsService _discountService = new DiscountsService();
         public Form1()
         {
             InitializeComponent();
@@ -46,7 +49,21 @@ namespace ProduktyDoKoszyka
         }
         private void displayProduct(int number)
         {
-            productUserControl1.Update(_productService.Products[number-1]);
+            _currentProduct = _productService.Products[number - 1];
+            productUserControl1.Update(_currentProduct);
         }
+
+        private void btnBuy_Click(object sender, EventArgs e)
+        {
+            _cart.AddProduct(_currentProduct);
+            lblSum.Text = _cart.Cost().ToString();
+            //dgvCart.DataSource = _cart.ProductGroups;
+        }
+
+        private void btnCheckout_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Nie no, to już by była przesada");
+        }
+              
     }
 }

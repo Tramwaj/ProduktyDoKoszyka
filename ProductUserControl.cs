@@ -26,8 +26,10 @@ namespace ProduktyDoKoszyka
         {
             lblName.Text = product.Name;
             lblDescription.Text = product.Description;
+            lblPrice.Text = product.Price.ToString() + "$";
+            lblCategory.Text = product.Category.ToString();
             pbxImage.ImageLocation = product.Url;
-            pbxImage.SizeMode = PictureBoxSizeMode.Zoom;            
-        }
+            pbxImage.SizeMode = PictureBoxSizeMode.Zoom;
+        }        
     }
 }

@@ -53,8 +53,11 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Cart.cs" />
+    <Compile Include="Models\SingleItemDiscount.cs" />
+    <Compile Include="Models\DiscountsService.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\ProductService.cs" />
+    <Compile Include="Models\CostCalculator.cs" />
     <Compile Include="ProductUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -78,6 +81,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Properties\DataSources\ProduktyDoKoszyka.Models.ProductGroup.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
