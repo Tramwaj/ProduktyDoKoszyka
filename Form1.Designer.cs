@@ -166,9 +166,9 @@
             // productUserControl1
             // 
             this.productUserControl1.Location = new System.Drawing.Point(107, 9);
-            this.productUserControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.productUserControl1.Margin = new System.Windows.Forms.Padding(2);
             this.productUserControl1.Name = "productUserControl1";
-            this.productUserControl1.Size = new System.Drawing.Size(287, 366);
+            this.productUserControl1.Size = new System.Drawing.Size(311, 366);
             this.productUserControl1.TabIndex = 6;
             // 
             // Form1

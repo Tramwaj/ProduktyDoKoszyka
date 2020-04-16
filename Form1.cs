@@ -61,7 +61,6 @@ namespace ProduktyDoKoszyka
             {
                 lblSumWithDiscount.Text = _cart.CostAfterDiscount(_discountService).ToString();
             }
-            //dgvCart.DataSource = _cart.ProductGroups;
         }
 
         private void btnCheckout_Click(object sender, EventArgs e)
