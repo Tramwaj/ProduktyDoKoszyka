@@ -57,6 +57,7 @@ namespace ProduktyDoKoszyka
             _cart.AddProduct(_currentProduct);
             updateCost();
         }
+
         private void updateCost()
         {
             lblSum.Text = _cart.Cost().ToString();

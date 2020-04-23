@@ -12,25 +12,23 @@ namespace ProduktyDoKoszyka.Models
         {
             return cart.Products.Sum(x => x.Price);
         }
+
         public static decimal CostAfterDiscount(this Cart cart, DiscountsService discounts)
         {
             decimal _cost = cart.Cost();
             foreach (var product in discounts.singleItemDiscounts)
             {
-                var DiscountedProduct = cart.Products
+                var DisountedProducts = cart.Products
                         .Where(p => p.Name == product.Name);
-                _cost -= DiscountedProduct
+                _cost -= DisountedProducts
                         .Count() >= product.RequiredQuantity ?
-                         DiscountedProduct.Sum(p => p.Price) * (product.Discount / 100m) : 0;
+                         DisountedProducts.Sum(p => p.Price) * (product.Discount / 100m) : 0;
             }
             return cart.Products
                 .GroupBy(p => p.Category)
                 .Distinct()
                 .Count() >= 3 ?
                 _cost * 0.9m : _cost;
-        }
-        //foreach discount
-        // if (x.Count(x=>x.Name==discount.SzukanaNazwa))>=discount.ilosc 
-
+        }        
     }
 }
