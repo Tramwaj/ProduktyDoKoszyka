@@ -7,11 +7,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ProduktyDoKoszyka.Models
-{    
+{
     public class Cart
     {
         public List<Product> Products { get; set; }
-                
+
         public Cart()
         {
             Products = new List<Product>();
@@ -19,7 +19,7 @@ namespace ProduktyDoKoszyka.Models
         public void AddProduct(Product _product)
         {
             Products.Add(_product);
-        }        
+        }
         public void Clear()
         {
             Products = new List<Product>();

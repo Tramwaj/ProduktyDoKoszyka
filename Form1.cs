@@ -19,7 +19,7 @@ namespace ProduktyDoKoszyka
         private readonly DiscountsService _discountService = new DiscountsService();
         public Form1()
         {
-            InitializeComponent();            
+            InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -71,12 +71,12 @@ namespace ProduktyDoKoszyka
 
         private void btnCheckout_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(this, "Brak kontaktu z serwisem płatności.");
+            MessageBox.Show("Unable to contact payment service :(");
             lblSum.ForeColor = Color.Black;
             lblSum.Font = new Font(lblSum.Font, FontStyle.Regular);
             _cart.Clear();
             updateCost();
         }
-              
+
     }
 }
