@@ -7,20 +7,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ProduktyDoKoszyka.Models
-{
-    public class ProductGroup 
-    {
-        public string Name { get; set; }        
-        public ProductCategory Category { get; set; }
-    }
+{    
     public class Cart
     {
         public List<Product> Products { get; set; }
-        
-        public int ItemsCount
-        {
-            get => Products.Count();
-        }
+                
         public Cart()
         {
             Products = new List<Product>();
