@@ -19,8 +19,7 @@ namespace ProduktyDoKoszyka
         private readonly DiscountsService _discountService = new DiscountsService();
         public Form1()
         {
-            InitializeComponent();
-            var cart = new Cart();
+            InitializeComponent();            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -56,16 +55,27 @@ namespace ProduktyDoKoszyka
         private void btnBuy_Click(object sender, EventArgs e)
         {
             _cart.AddProduct(_currentProduct);
+            updateCost();
+        }
+        private void updateCost()
+        {
             lblSum.Text = _cart.Cost().ToString();
             if (_cart.Cost() != _cart.CostAfterDiscount(_discountService))
             {
-                lblSumWithDiscount.Text = _cart.CostAfterDiscount(_discountService).ToString();
+                lblSumWithDiscount.Text = _cart.CostAfterDiscount(_discountService).ToString(".##");
+                lblSum.ForeColor = Color.Red;
+                lblSum.Font = new Font(lblSum.Font, FontStyle.Strikeout);
             }
+            else lblSumWithDiscount.Text = "";
         }
 
         private void btnCheckout_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Nie no, to już by była przesada");
+            MessageBox.Show(this, "Brak kontaktu z serwisem płatności.");
+            lblSum.ForeColor = Color.Black;
+            lblSum.Font = new Font(lblSum.Font, FontStyle.Regular);
+            _cart.Clear();
+            updateCost();
         }
               
     }

@@ -44,10 +44,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(18, 20);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Location = new System.Drawing.Point(24, 25);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(68, 19);
+            this.button1.Size = new System.Drawing.Size(91, 23);
             this.button1.TabIndex = 0;
             this.button1.Text = "Product 1";
             this.button1.UseVisualStyleBackColor = true;
@@ -55,10 +55,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(18, 53);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Location = new System.Drawing.Point(24, 65);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(68, 19);
+            this.button2.Size = new System.Drawing.Size(91, 23);
             this.button2.TabIndex = 1;
             this.button2.Text = "Product 2";
             this.button2.UseVisualStyleBackColor = true;
@@ -66,10 +66,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(18, 85);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Location = new System.Drawing.Point(24, 105);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(68, 19);
+            this.button3.Size = new System.Drawing.Size(91, 23);
             this.button3.TabIndex = 2;
             this.button3.Text = "Product 3";
             this.button3.UseVisualStyleBackColor = true;
@@ -77,10 +77,10 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(18, 120);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
+            this.button4.Location = new System.Drawing.Point(24, 148);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(68, 19);
+            this.button4.Size = new System.Drawing.Size(91, 23);
             this.button4.TabIndex = 3;
             this.button4.Text = "Product 4";
             this.button4.UseVisualStyleBackColor = true;
@@ -88,10 +88,10 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(18, 152);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
+            this.button5.Location = new System.Drawing.Point(24, 187);
+            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(68, 19);
+            this.button5.Size = new System.Drawing.Size(91, 23);
             this.button5.TabIndex = 4;
             this.button5.Text = "Product 5";
             this.button5.UseVisualStyleBackColor = true;
@@ -99,10 +99,10 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(18, 184);
-            this.button6.Margin = new System.Windows.Forms.Padding(2);
+            this.button6.Location = new System.Drawing.Point(24, 226);
+            this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(68, 19);
+            this.button6.Size = new System.Drawing.Size(91, 23);
             this.button6.TabIndex = 5;
             this.button6.Text = "Product 6";
             this.button6.UseVisualStyleBackColor = true;
@@ -111,10 +111,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(432, 197);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(576, 242);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 13);
+            this.label1.Size = new System.Drawing.Size(107, 17);
             this.label1.TabIndex = 8;
             this.label1.Text = "Cart total value:";
             // 
@@ -123,10 +122,9 @@
             this.lblSum.AutoSize = true;
             this.lblSum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lblSum.ForeColor = System.Drawing.Color.Black;
-            this.lblSum.Location = new System.Drawing.Point(521, 197);
-            this.lblSum.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSum.Location = new System.Drawing.Point(695, 242);
             this.lblSum.Name = "lblSum";
-            this.lblSum.Size = new System.Drawing.Size(15, 16);
+            this.lblSum.Size = new System.Drawing.Size(18, 20);
             this.lblSum.TabIndex = 9;
             this.lblSum.Text = "0";
             // 
@@ -134,20 +132,19 @@
             // 
             this.lblSumWithDiscount.AutoSize = true;
             this.lblSumWithDiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblSumWithDiscount.ForeColor = System.Drawing.Color.YellowGreen;
-            this.lblSumWithDiscount.Location = new System.Drawing.Point(572, 197);
-            this.lblSumWithDiscount.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSumWithDiscount.ForeColor = System.Drawing.Color.LimeGreen;
+            this.lblSumWithDiscount.Location = new System.Drawing.Point(763, 242);
             this.lblSumWithDiscount.Name = "lblSumWithDiscount";
-            this.lblSumWithDiscount.Size = new System.Drawing.Size(0, 18);
+            this.lblSumWithDiscount.Size = new System.Drawing.Size(0, 24);
             this.lblSumWithDiscount.TabIndex = 10;
             // 
             // btnBuy
             // 
             this.btnBuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnBuy.Location = new System.Drawing.Point(434, 34);
-            this.btnBuy.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBuy.Location = new System.Drawing.Point(579, 42);
+            this.btnBuy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBuy.Name = "btnBuy";
-            this.btnBuy.Size = new System.Drawing.Size(122, 70);
+            this.btnBuy.Size = new System.Drawing.Size(163, 86);
             this.btnBuy.TabIndex = 11;
             this.btnBuy.Text = "Add to cart";
             this.btnBuy.UseVisualStyleBackColor = true;
@@ -155,9 +152,10 @@
             // 
             // btnCheckout
             // 
-            this.btnCheckout.Location = new System.Drawing.Point(435, 265);
+            this.btnCheckout.Location = new System.Drawing.Point(580, 326);
+            this.btnCheckout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCheckout.Name = "btnCheckout";
-            this.btnCheckout.Size = new System.Drawing.Size(124, 55);
+            this.btnCheckout.Size = new System.Drawing.Size(165, 68);
             this.btnCheckout.TabIndex = 12;
             this.btnCheckout.Text = "Checkout";
             this.btnCheckout.UseVisualStyleBackColor = true;
@@ -165,17 +163,17 @@
             // 
             // productUserControl1
             // 
-            this.productUserControl1.Location = new System.Drawing.Point(107, 9);
-            this.productUserControl1.Margin = new System.Windows.Forms.Padding(2);
+            this.productUserControl1.Location = new System.Drawing.Point(143, 11);
+            this.productUserControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.productUserControl1.Name = "productUserControl1";
-            this.productUserControl1.Size = new System.Drawing.Size(311, 366);
+            this.productUserControl1.Size = new System.Drawing.Size(415, 450);
             this.productUserControl1.TabIndex = 6;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(650, 407);
+            this.ClientSize = new System.Drawing.Size(867, 501);
             this.Controls.Add(this.btnCheckout);
             this.Controls.Add(this.btnBuy);
             this.Controls.Add(this.lblSumWithDiscount);
@@ -188,7 +186,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
